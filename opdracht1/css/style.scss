@@ -1,26 +1,20 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* https://css-tricks.com/box-sizing/ */
+  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
   background: #eee;
   background: url("../img/flagF4D.png") center no-repeat;
 }
-
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
-
 body {
   max-width: 95vw;
   margin: 1em auto;
   padding: 1em;
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 1em;
-  -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
-          box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
+  box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
 }
 
 h1 {
@@ -28,8 +22,8 @@ h1 {
 }
 
 .movie-thumb {
-  border: 5px solid #2d8d3d;
-  background-color: #1d1d1d;
+  border: 5px solid rgb(45, 141, 61);
+  background-color: rgb(29, 29, 29);
   list-style: none;
   float: left;
   width: 100px;
@@ -39,7 +33,7 @@ h1 {
 }
 
 .selected {
-  border: solid 10px #1778a5;
+  border: solid 10px rgb(23, 120, 165);
 }
 
 .fav-sidebar {
@@ -54,9 +48,8 @@ h1 {
 .f-selected {
   width: 100px;
   min-height: 100px;
-  background-color: #0078be;
+  background-color: rgb(0, 120, 190);
   float: left;
   margin: 2%;
   list-style: none;
 }
-/*# sourceMappingURL=style.css.map */
