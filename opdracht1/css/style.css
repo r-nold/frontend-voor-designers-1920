@@ -3,7 +3,6 @@ html {
           box-sizing: border-box;
   /* https://css-tricks.com/box-sizing/ */
   background: #eee;
-  background: url("../img/flagF4D.png") center no-repeat;
 }
 
 *,
@@ -17,7 +16,7 @@ body {
   max-width: 95vw;
   margin: 1em auto;
   padding: 1em;
-  background: white;
+  background: #1d1d1d;
   border-radius: 1em;
   -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
           box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
@@ -25,6 +24,8 @@ body {
 
 h1 {
   font-family: Arial;
+  color: white;
+  text-align: center;
 }
 
 .movie-thumb {
@@ -32,10 +33,25 @@ h1 {
   background-color: #1d1d1d;
   list-style: none;
   float: left;
-  width: 100px;
-  min-height: 100px;
+  width: 150px;
+  min-height: 200px;
   margin: 2%;
   border-radius: 5px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.movie-thumb:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 .selected {
@@ -45,18 +61,53 @@ h1 {
 .fav-sidebar {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
-  height: 20vh;
+  height: 25vh;
   position: fixed;
-  bottom: 0;
+  bottom: -50;
   left: 0;
 }
 
 .f-selected {
-  width: 100px;
-  min-height: 100px;
-  background-color: #0078be;
+  width: 150px;
+  min-height: 200px;
+  background-color: #474747;
+  border: solid 10px #1778a5;
   float: left;
   margin: 2%;
   list-style: none;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.movie1 {
+  background-image: url("/img/movieposters/movieposter1.jpg");
+  background-size: contain;
+}
+
+.movie2 {
+  background-image: url("/img/movieposters/movieposter2.jpg");
+  background-size: contain;
+}
+
+.movie3 {
+  background-image: url("/img/movieposters/movieposter3.jpg");
+  background-size: contain;
+}
+
+.movie4 {
+  background-image: url("/img/movieposters/movieposter4.jpg");
+  background-size: contain;
+}
+
+.movie5 {
+  background-image: url("/img/movieposters/movieposter5.jpg");
+  background-size: contain;
+}
+
+.movie6 {
+  background-image: url("/img/movieposters/movieposter6.jpg");
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
