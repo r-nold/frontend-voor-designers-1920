@@ -1,0 +1,43 @@
+$app-width: 50vw;
+$app-height: auto;
+
+$fontweight: 100;
+
+//Colors
+
+$dark-green: #1ec0a5;
+$lime-green: #27eab5;
+$dark-gray: #202124;
+$blue-green: #a4ffec;
+
+$bg-color: $dark-green;
+$title-color: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.ftc-app {
+  width: $app-width;
+  height: $app-height;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  font-weight: $fontweight;
+}
+
+h2 {
+  font-weight: $fontweight;
+}
+
+.ftc-app > * {
+  padding: 5%;
+  text-align: center;
+  background-color: $bg-color;
+}
