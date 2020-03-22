@@ -5,6 +5,10 @@
   </head>
   <body>
     <main>
+      <div class="title">
+        <h1 class="apptitle">Flatten the curve</h1>
+        <h2 class="appsubtitle">COVID-19 in Nederland</h2>
+      </div>
       <section class="ftc-app">
         <h1>Totaal infecties</h1>
         <div class="casesHtml fields"></div>
@@ -15,8 +19,12 @@
         <h1>Nieuwe doden</h1>
         <div class="todayDeathsHtml fields"></div>
       </section>
+      <section class="graph">
+        <div id="D3"></div>
+      </section>
     </main>
   </body>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/d3custom.js"></script>
 </html>

@@ -39,3 +39,6 @@ Wat kan je zien: Je ziet een realtime update van het aantal besmettingen en aant
 
 D3.js?
 API: World health organisation?
+
+Ideal State : Werkende data die te zien is
+First-time use / Onboarding: Kleine overlay die de werking laat zien

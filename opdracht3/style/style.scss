@@ -1,34 +1,43 @@
-$app-width: 50vw;
+// Sizes
+$app-width: 40vw;
 $app-height: auto;
-
 $fontweight: 100;
 
 //Colors
-
 $dark-green: #1ec0a5;
 $lime-green: #27eab5;
 $dark-gray: #202124;
 $blue-green: #a4ffec;
-
 $bg-color: $dark-green;
 $title-color: white;
+$fontcolorwhite: white;
 
 * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
 }
 
 .ftc-app {
   width: $app-width;
   height: $app-height;
-  margin: 0 auto;
-
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-gap: 9px;
   font-weight: $fontweight;
 }
 
@@ -37,7 +46,12 @@ h2 {
 }
 
 .ftc-app > * {
-  padding: 5%;
+  padding: 30px;
   text-align: center;
   background-color: $bg-color;
+  color: $fontcolorwhite;
+}
+
+.fields {
+  padding-top: 30px;
 }

@@ -2,20 +2,39 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
 }
 
 .ftc-app {
-  width: 50vw;
+  width: 40vw;
   height: auto;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 5px;
+  grid-gap: 9px;
   font-weight: 100;
 }
 
@@ -24,8 +43,13 @@ h2 {
 }
 
 .ftc-app > * {
-  padding: 5%;
+  padding: 30px;
   text-align: center;
   background-color: #1ec0a5;
+  color: white;
+}
+
+.fields {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

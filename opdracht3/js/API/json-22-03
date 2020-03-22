@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: close
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 153
+Etag: W/"99-pwTXb+JhA/NNV9eGtMxCEniDo0U"
+Date: Sun, 22 Mar 2020 16:11:52 GMT
+Via: 1.1 vegur
+
+{
+  "country": "Netherlands",
+  "cases": 4204,
+  "todayCases": 573,
+  "deaths": 179,
+  "todayDeaths": 43,
+  "recovered": 2,
+  "active": 4023,
+  "critical": 354,
+  "casesPerOneMillion": 245
+}
