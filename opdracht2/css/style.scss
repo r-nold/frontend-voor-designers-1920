@@ -35,6 +35,7 @@ nav {
     list-style-type: none;
     li {
       display: inline;
+      margin: 5px;
     }
   }
 }
@@ -69,6 +70,7 @@ main {
 .more {
   font-size: 28px;
   font-weight: bold;
+  margin: 0 auto;
 }
 .portfolio {
   display: flex;
@@ -111,7 +113,7 @@ main {
 }
 
 .appear {
-  transition: ease-in 2s;
+  transition: ease-in 0.5s;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   -o-transform: scale(1);
@@ -158,6 +160,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 5%;
+  height: 80vh;
 }
 .bio-title {
   width: 100%;

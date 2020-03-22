@@ -2,7 +2,7 @@ let alleportfolio = document.querySelectorAll(".portfolio-item");
 
 window.addEventListener("scroll", () => {
   const scrolledlocal = window.scrollY;
-  if (scrolledlocal < 700) {
+  if (scrolledlocal < 700 || scrolledlocal > 1600) {
     /*     portfolio.classList.remove("appear");
     portfolio.classList.add("okbye"); */
     alleportfolio.forEach(pitem => {
