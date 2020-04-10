@@ -1,1 +1,4 @@
-GET https://coronavirus-19-api.herokuapp.com/countries/netherlands
+curl --request GET \
+	--url 'https://covid-19-data.p.rapidapi.com/country?format=undefined&name=netherlands' \
+	--header 'x-rapidapi-host: covid-19-data.p.rapidapi.com' \
+	--header 'x-rapidapi-key: 795ebcbd3emshfbe78a7408abecdp12d4b3jsn286d61d78529'
