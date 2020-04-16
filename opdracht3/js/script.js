@@ -7,11 +7,11 @@ let htmlNewDeaths = document.querySelector(".todayDeathsHtml");
 function getTheData() {
   // Bron van de API en het ophalen ervan
   var apiData = fetch(
-    "https://covid-19-data.p.rapidapi.com/country?format=undefined&name=netherlands",
+    "https://rawg-video-games-database.p.rapidapi.com/games",
     {
       method: "GET",
       headers: {
-        "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
+        "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
         "x-rapidapi-key": "795ebcbd3emshfbe78a7408abecdp12d4b3jsn286d61d78529",
       },
     }
@@ -20,17 +20,8 @@ function getTheData() {
       return response.json();
     })
     .then((data) => {
-      var storedData = data[0];
-      console.log(storedData);
-      let cases = document.createElement("H2");
-      let numberofcases = document.createTextNode(storedData.confirmed);
-      cases.appendChild(numberofcases);
-      htmlCases.appendChild(cases);
-
-      let deaths = document.createElement("H2");
-      let numberofdeaths = document.createTextNode(storedData.deaths);
-      deaths.appendChild(numberofdeaths);
-      htmlDeaths.appendChild(deaths);
+      var storedData = data;
+      console.log(storedData.results[0].metacritic);
     })
     .catch((err) => {
       console.log(err);
