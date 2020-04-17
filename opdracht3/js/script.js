@@ -72,7 +72,7 @@ function getResults() {
       var gameImg = randomGame.background_image;
       gamePlace.innerHTML = "<h1>" + randomGame.name + "</h1>";
       gamePlace.style.backgroundImage = "url(" + gameImg + ")";
-      gamePlace.style.backgroundSize = "contain";
+      gamePlace.style.backgroundSize = "cover";
       gamePlace.style.backgroundRepeat = "no-repeat";
       gamePlace.style.height = "600px";
       window.location.href = "#game";
