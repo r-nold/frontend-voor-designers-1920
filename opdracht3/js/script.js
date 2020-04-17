@@ -74,7 +74,7 @@ function getResults() {
       gamePlace.style.backgroundImage = "url(" + gameImg + ")";
       gamePlace.style.backgroundSize = "cover";
       gamePlace.style.backgroundRepeat = "no-repeat";
-      gamePlace.style.height = "600px";
+      gamePlace.style.height = "800px";
       window.location.href = "#game";
     })
     .catch((err) => {
