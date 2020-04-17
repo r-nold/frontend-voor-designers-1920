@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  background-image: url("/img/nextplaylogo.png");
+  background-image: url("img/nextplaylogo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
