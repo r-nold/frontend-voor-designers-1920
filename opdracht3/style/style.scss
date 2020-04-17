@@ -1,57 +1,107 @@
-// Sizes
-$app-width: 40vw;
-$app-height: auto;
-$fontweight: 100;
+$fontcolor: #ffffff;
+$backgroundcolor: #1b262c;
+$appcolor: #0f4c81;
+$logo: url("/img/nextplaylogo.png");
 
-//Colors
-$dark-green: #1ec0a5;
-$lime-green: #27eab5;
-$dark-gray: #202124;
-$blue-green: #a4ffec;
-$bg-color: $dark-green;
-$title-color: white;
-$fontcolorwhite: white;
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: $backgroundcolor;
+  color: $fontcolor;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.app {
+  background-color: $appcolor;
 }
 
-.title {
-  width: 100vw;
-  text-align: center;
-  margin: 20px;
+.platform {
+  width: 100%;
+  background-color: $backgroundcolor;
+  border: 2px solid white;
+  margin: 5%;
+  transition: 1s ease-in-out;
 }
 
-.ftc-app {
-  width: $app-width;
-  height: $app-height;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 9px;
-  font-weight: $fontweight;
+.logo {
+  background-image: $logo;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20vh;
+  max-width: 200%;
+  margin-bottom: 0px;
 }
 
+.go {
+  display: block;
+  margin-top: -10%;
+  margin-bottom: 20%;
+  min-width: 30%;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.go:hover {
+  transform: scale(1.3) rotate(90deg);
+  transition: 1s ease-in-out;
+}
+
+.dropdown {
+  display: block;
+}
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #ffffff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.selected {
+  background-color: white;
+  color: $appcolor;
+  transition: 1s ease-in-out;
+}
+
+.platform:hover {
+  background-color: white;
+  color: $appcolor;
+  transition: 1s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: auto !important;
+}
+
+h1,
 h2 {
-  font-weight: $fontweight;
+  margin-top: 50px !important;
 }
 
-.ftc-app > * {
-  padding: 30px;
-  text-align: center;
-  background-color: $bg-color;
-  color: $fontcolorwhite;
-}
-
-.fields {
-  padding-top: 30px;
+.gamePlace h1 {
+  background-color: black;
+  opacity: 0.7;
 }

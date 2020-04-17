@@ -1,4 +1,4 @@
 curl --request GET \
-	--url https://rawg-video-games-database.p.rapidapi.com/games \
+	--url https://rawg-video-games-database.p.rapidapi.com/games
 	--header 'x-rapidapi-host: rawg-video-games-database.p.rapidapi.com' \
 	--header 'x-rapidapi-key: 795ebcbd3emshfbe78a7408abecdp12d4b3jsn286d61d78529'

@@ -1,28 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nextplay - Jouw volgende game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Frontend voor Designer - Opdracht 3</title>
   </head>
+
   <body>
-    <main>
-      <div class="title">
-        <h1 class="apptitle">Flatten the curve</h1>
-        <h2 class="appsubtitle">COVID-19 in Nederland</h2>
+    <div class="logo"></div>
+    <h2 class="text-center">Find out your next game to play!</h2>
+    <h4 class="text-center">Select the filters and press the play button</h4>
+    <main class="container-fluid app">
+      <div class="row">
+        <div class="col-sm"></div>
       </div>
-      <section class="ftc-app">
-        <h1>Totaal infecties</h1>
-        <div class="casesHtml fields"></div>
-        <h1>Nieuw bevestigd</h1>
-        <div class="todayCasesHtml fields"></div>
-        <h1>Totaal doden</h1>
-        <div class="deathsHtml fields"></div>
-        <h1>Nieuwe doden</h1>
-        <div class="todayDeathsHtml fields"></div>
-      </section>
-      <section class="graph">
-        <div id="D3"></div>
-      </section>
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="text-center">Platform</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm platform ps4 text-center">
+          <p class="align-middle">PS4</p>
+        </div>
+        <div class="col-sm platform xbox text-center">
+          <p class="align-middle">Xbox One</p>
+        </div>
+        <div class="col-sm platform pc text-center">
+          <p class="align-middle">PC</p>
+        </div>
+        <div class="col-sm platform switch text-center">
+          <p class="align-middle">Switch</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h1 class="text-center">Genre</h1>
+          <select id="genre" class="dropdown mx-auto">
+            <option value="action">Action</option>
+            <option value="shooter">Shooter</option>
+            <option value="adventure">Adventure</option>
+            <option value="role-playing-games-rpg">Role Playing Game</option>
+            <option value="simulation">Simulation</option>
+            <option value="strategy">Strategy</option>
+            <option value="sports">Sports</option>
+          </select>
+        </div>
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <h1 class="text-center">Min. Rating</h1>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0.1"
+              max="5.0"
+              value="4"
+              class="slider"
+              step=".1"
+              id="rating"
+            />
+            <h3 id="demo" class="text-center"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <img class="go mx-auto" src="/img/playbtnpng.png" />
+        </div>
+        <div class="col-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div id="game" class="col-8 gamePlace text-center"></div>
+        <div class="col-sm"></div>
+      </div>
     </main>
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js"></script>
 </html>
+
+<!-- go = startknop, -->
